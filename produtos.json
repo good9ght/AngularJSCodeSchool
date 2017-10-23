@@ -1,0 +1,56 @@
+[
+  {
+    "nome": "Azurite",
+    "descricao": "Algumas gemas possuem qualidades escondidas além de seu brilho... Azurite é uma delas.",
+    "brilho": "8",
+    "preco": "110.50",
+    "raridade": "7",
+    "cor": "#CCC",
+    "lados": "14",
+    "imagens": [
+      "imagens/gem-02.gif",
+      "imagens/gem-05.gif",
+      "imagens/gem-09.gif"
+    ],
+    "analises": [
+      {
+        "estrelas": "5",
+        "comentario": "Eu amei esse produto!",
+        "autor": "michael@jackson.com"
+      },
+      {
+      "estrelas": "2",
+      "comentario": "Odiei essa merda",
+      "autor": "marshall@mathers.com"
+      }
+    ]
+  }, {
+    "nome": "Bloodstone",
+    "descricao": "A origem de Bloodstone é desconhecida, consequentemente ela possui um baixo valor. Entretanto em um forte brilho.",
+    "brilho": "9",
+    "preco": "22.90",
+    "raridade": "6",
+    "cor": "#EEE",
+    "lados": "12",
+    "imagens": [
+      "imagens/gem-01.gif",
+      "imagens/gem-03.gif",
+      "imagens/gem-04.gif"
+    ],
+    "analises": []
+  }, {
+    "nome": "Zircon",
+    "descricao": "Zircon é nossa gema mais cobiçada e procurada. Você pagará muito para possuir esse lindo e forte brilho.",
+    "brilho": "70",
+    "preco": "1100",
+    "raridade": "2",
+    "cor": "#000",
+    "lados": "6",
+    "imagens": [
+      "imagens/gem-06.gif",
+      "imagens/gem-07.gif",
+      "imagens/gem-08.gif"
+    ],
+    "analises": []
+  }
+]

@@ -1,0 +1,45 @@
+<div class="panel">
+  <h4>Analises</h4>
+  <blockquote ng-repeat="analise in produto.analises">
+    <b>Estrelas: {{analise.estrelas}}</b>
+    {{analise.comentario}}
+    <cite class="clearfix">- {{analise.autor}} {{analise.criadaEm | date}}</cite>
+  </blockquote>
+  <form name="formularioAnalise"
+        ng-controller="AnalisesController as analiseCtrl"
+        ng-submit="formularioAnalise.$valid && analiseCtrl.addAnalise(produto)"
+        novalidate>
+    <blockquote>
+      <b>Estrelas: {{analiseCtrl.analise.estrelas}}</b>
+      {{analiseCtrl.analise.comentario}}
+      <cite class="clearfix">- {{analiseCtrl.analise.autor}}</cite>
+    </blockquote>
+    <fieldset class="form-group">
+      <select ng-model="analiseCtrl.analise.estrelas"
+              class="form-control"
+              ng-options="estrelas for estrelas in [5,4,3,2,1]"
+              title="Estrelas"
+              required>
+        <option value="">Avalie o Produto</option>
+      </select>
+    </fieldset>
+    <fieldset class="group-form">
+      <textarea ng-model="analiseCtrl.analise.comentario"
+                class="form-control"
+                placeholder="Escreva sua analise aqui"
+                required></textarea>
+    </fieldset>
+    <fieldset class="form-group">
+      <input ng-model="analiseCtrl.analise.autor"
+            type="email"
+            class="form-control"
+            placeholder="nome@mail.com"
+            required />
+    </fieldset>
+    <fieldset class="form-group">
+      <input type="submit"
+          class="btn btn-primary pull-right"
+          value="Enviar" />
+    </fieldset>
+  </form>
+</div>

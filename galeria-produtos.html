@@ -1,0 +1,12 @@
+<div ng-show="produto.imagens.length" class="clearfix">
+  <div>
+      <img ng-src="{{produto.imagens[galeria.atual]}}" class="imagem"/>
+  </div>
+    <ul class="img-thumbnails lista-miniaturas">
+      <li ng-class="{ 'imagem-ativa':galeria.atual == $index }"
+      class="miniatura thumbnail"
+          ng-repeat="imagem in produto.imagens" >
+        <img ng-src="{{imagem}}" alt="imagem" ng-click="galeria.definirAtual($index)"/>
+      </li>
+    </ul>
+</div>

@@ -1,0 +1,48 @@
+.ng-invalid .ng-dirty {
+  border-color: :#FA787E;
+}
+
+.ng-valid .ng-dirty {
+  border-color: #78FA89;
+}
+
+.imagem {
+  height:20%;
+  width: 20%;
+  display: block;
+  margin: auto
+}
+
+.miniatura {
+  float: left;
+  width: 33% !important;
+  cursor: pointer
+}
+
+.lista-miniaturas {
+  margin-top:3%;
+  width: 30% !important;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding:0px
+}
+
+/*botoes rosas*/
+.nav-pills > li.active > a,
+ .nav-pills > li.active > a:hover,
+ .nav-pills > li.active > a:focus {
+    color:white;
+    background-color:#c51954;
+    }
+
+.nav-pills > li > a,
+ .nav-pills > li > a:hover,
+ .nav-pills > li > a:focus {
+   color: #c51954;
+   border: 1px solid #c51954;
+ }
+
+ .imagem-ativa {
+    border:1px solid #c51954;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- diretivas dizem ao angular para executar ou referenciar javascript -->
+<!-- a diretiva ng-app executa o modulo quando a pagina carrega -->
+<html ng-app="loja">
+  <head>
+    <title>Angular JS</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/diretivas.js"></script>
+  </head>
+  <!-- ng-controller anexa a controller no html -->
+    <!--  diretiva  nome da controller   apelido -->
+    <!--      |             |              | -->
+  <body ng-controller="LojaController as loja">
+    <!-- cabeçalho -->
+    <header>
+      <h1 class="text-center">Gemas Flatlander</h1>
+      <h2 class="text-center">uma loja Angular</h2>
+    </header>
+    <!-- onde ficam os produtos -->
+    <!-- produto -->
+    <div class="list-group">
+      <!-- ng-repeat repete os itens de um array -->
+      <div class="list-group-item" ng-repeat="produto in loja.produtos">
+        <!-- titulo -->
+        <div produto-titulo></div>
+        <!-- imagens -->
+        <galeria-produtos class="text-center"></galeria-produtos>
+        <!-- tabs -->
+        <tabs-produtos></tabs-produtos>
+      </div>
+
+    </div>
+  </body>
+</html>
